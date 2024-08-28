@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.10.6 on win32)" generated="2024-08-28T16:43:30.272617" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\PY35555.CORP\Desktop\Sireesha-Test-Assignment\Volvo-Test-Assignment\tests">
+<suite id="s1-s1" name="SuiteA" source="C:\Users\PY35555.CORP\Desktop\Sireesha-Test-Assignment\Volvo-Test-Assignment\tests\SuiteA.robot">
+<test id="s1-s1-t1" name="Browse Amazon Products" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-28T16:43:30.506023" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.in'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-28T16:43:30.506023" elapsed="5.593777"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-28T16:43:36.100800" elapsed="0.446051"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-28T16:43:36.547850" level="INFO">Browser opened and maximized</msg>
+<arg>Browser opened and maximized</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-28T16:43:36.547850" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-28T16:43:36.549852" level="INFO">Typing text 'smartphone' into text field 'id=twotabsearchtextbox'.</msg>
+<arg>id=twotabsearchtextbox</arg>
+<arg>smartphone</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-28T16:43:36.548849" elapsed="0.368600"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-28T16:43:36.919450" level="INFO">Entered search term: laptop</msg>
+<arg>Entered search term: laptop</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-28T16:43:36.918449" elapsed="0.001001"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-08-28T16:43:36.920479" level="INFO">Clicking button 'xpath=//input[@value='Go']'.</msg>
+<arg>xpath=//input[@value='Go']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-28T16:43:36.919450" elapsed="2.863995"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-28T16:43:39.784445" level="INFO">Clicked search button</msg>
+<arg>Clicked search button</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-28T16:43:39.784445" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//span[@class='a-size-medium a-color-base a-text-normal']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-28T16:43:39.785444" elapsed="0.043135"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-28T16:43:39.829579" level="INFO">Search results are visible</msg>
+<arg>Search results are visible</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-28T16:43:39.829579" elapsed="0.000000"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-08-28T16:43:39.956580" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-08-28T16:43:39.829579" elapsed="0.127001"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-28T16:43:39.957579" level="INFO">Screenshot captured</msg>
+<arg>Screenshot captured</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-28T16:43:39.956580" elapsed="0.000999"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-28T16:43:39.957579" elapsed="2.202193"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-28T16:43:42.160654" level="INFO">Browser closed</msg>
+<arg>Browser closed</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-28T16:43:42.160654" elapsed="0.000000"/>
+</kw>
+<doc>Test case to browse products on Amazon.in and log actions</doc>
+<status status="PASS" start="2024-08-28T16:43:30.504021" elapsed="11.656633"/>
+</test>
+<status status="PASS" start="2024-08-28T16:43:30.300042" elapsed="11.861610"/>
+</suite>
+<status status="PASS" start="2024-08-28T16:43:30.282756" elapsed="11.878896"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="SuiteA">Tests.SuiteA</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,25 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.SuiteC                                                                  
+==============================================================================
+Search Add To Cart And Checkout :: This test case opens the Amazon...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\PY35555.CORP\Desktop\Sireesha-Test-Assignment\Volvo-Test-Assignment\tests\SuiteC.robot:14
+    T:  Search Add To Cart And Checkout    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\PY35555.CORP\Desktop\Sireesha-Test-Assignment\Volvo-Test-Assignment\tests\SuiteC.robot:27
+      Wait Until Element Is Visible    ${GO_TO_CART_BUTTON}    30s
+      |  ${GO_TO_CART_BUTTON} = xpath=//*[@data-csa-c-id='2nrmxy-pvh6xy-i7ymz8-vhigv0'] (str)
+______________________________________________________________________________
+| FAIL |
+Element 'xpath=//*[@data-csa-c-id='2nrmxy-pvh6xy-i7ymz8-vhigv0']' not visible after 30 seconds.
+------------------------------------------------------------------------------
+Tests.SuiteC                                                          | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\PY35555.CORP\Desktop\Sireesha-Test-Assignment\Volvo-Test-Assignment\pabot_results\2\output.xml

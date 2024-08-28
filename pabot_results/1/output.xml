@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.10.6 on win32)" generated="2024-08-28T16:43:30.279657" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\PY35555.CORP\Desktop\Sireesha-Test-Assignment\Volvo-Test-Assignment\tests">
+<suite id="s1-s1" name="SuiteB" source="C:\Users\PY35555.CORP\Desktop\Sireesha-Test-Assignment\Volvo-Test-Assignment\tests\SuiteB.robot">
+<test id="s1-s1-t1" name="Search And Browse Laptops" line="12">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-28T16:43:30.489870" level="INFO">Starting test case: Search And Browse Laptops</msg>
+<arg>Starting test case: Search And Browse Laptops</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-28T16:43:30.489757" elapsed="0.000113"/>
+</kw>
+<kw name="Open Amazon Homepage" owner="HomePage">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-28T16:43:30.490867" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.in'.</msg>
+<arg>https://www.amazon.in</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-28T16:43:30.490867" elapsed="5.965788"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-28T16:43:36.457655" elapsed="0.219198"/>
+</kw>
+<status status="PASS" start="2024-08-28T16:43:30.489870" elapsed="6.186983"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-28T16:43:36.677852" level="INFO">Amazon homepage opened successfully.</msg>
+<arg>Amazon homepage opened successfully.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-28T16:43:36.676853" elapsed="0.000999"/>
+</kw>
+<kw name="Search For Product" owner="HomePage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-28T16:43:36.679853" level="INFO">Typing text 'laptop' into text field 'id=twotabsearchtextbox'.</msg>
+<arg>${SEARCH_BAR}</arg>
+<arg>${product_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-28T16:43:36.678853" elapsed="0.458028"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-08-28T16:43:37.138882" level="INFO">Clicking button 'xpath=//input[@value='Go']'.</msg>
+<arg>${SEARCH_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-28T16:43:37.137882" elapsed="2.307094"/>
+</kw>
+<arg>laptop</arg>
+<status status="PASS" start="2024-08-28T16:43:36.677852" elapsed="2.767124"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-28T16:43:39.444976" level="INFO">Searched for laptops.</msg>
+<arg>Searched for laptops.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-28T16:43:39.444976" elapsed="0.000000"/>
+</kw>
+<kw name="Validate Search Results">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-28T16:43:39.445975" level="INFO">Validating search results.</msg>
+<arg>Validating search results.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-28T16:43:39.445975" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${PRODUCT_NAME}</arg>
+<arg>${PAGE_LOAD_TIMEOUT}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-08-28T16:43:39.445975" elapsed="0.015998"/>
+</kw>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2024-08-28T16:43:39.473974" level="INFO">${results} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="82e45d102527cc7752c8228767044b50", element="f.8FC2FA891B1C03A792F4A0AFD4C89787.d.09E5E6D178B312D562FEBEAEC42EBD69.e.515")&gt;, &lt;selenium.webdri...</msg>
+<var>${results}</var>
+<arg>${PRODUCT_NAME}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2024-08-28T16:43:39.461973" elapsed="0.012001"/>
+</kw>
+<kw name="Should Be True" owner="BuiltIn">
+<arg>'${results}' != 'None'</arg>
+<arg>No products were found in the search results.</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" start="2024-08-28T16:43:39.473974" elapsed="0.001001"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-28T16:43:39.474975" level="INFO">Search results contain products with the specified search term.</msg>
+<arg>Search results contain products with the specified search term.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-28T16:43:39.474975" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-08-28T16:43:39.445975" elapsed="0.029000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-28T16:43:39.475974" level="INFO">Search results validated successfully.</msg>
+<arg>Search results validated successfully.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-28T16:43:39.474975" elapsed="0.000999"/>
+</kw>
+<kw name="Browse Through Pages">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-28T16:43:39.475974" level="INFO">Starting pagination through 3 pages.</msg>
+<arg>Starting pagination through ${pages_to_browse} pages.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-28T16:43:39.475974" elapsed="0.000000"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-28T16:43:39.476973" level="INFO">Browsing page 1.</msg>
+<arg>Browsing page ${i + 1}.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-28T16:43:39.476973" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-08-28T16:43:39.647445" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-08-28T16:43:39.647445" level="FAIL">Element with locator '//a[contains(@aria-label, 'Next')]' not found.</msg>
+<arg>${PAGINATION_BUTTON}</arg>
+<arg>${PAGE_LOAD_TIMEOUT}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="FAIL" start="2024-08-28T16:43:39.477974" elapsed="0.172470">Element with locator '//a[contains(@aria-label, 'Next')]' not found.</status>
+</kw>
+<msg time="2024-08-28T16:43:39.650444" level="INFO">${is_visible} = False</msg>
+<var>${is_visible}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${PAGINATION_BUTTON}</arg>
+<arg>${PAGE_LOAD_TIMEOUT}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-08-28T16:43:39.476973" elapsed="0.174472"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${is_visible}</arg>
+<arg>Log</arg>
+<arg>Pagination button found on page ${i + 1}, navigating to next page.</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-08-28T16:43:39.651445" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${is_visible}</arg>
+<arg>Scroll Element Into View</arg>
+<arg>${PAGINATION_BUTTON}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-08-28T16:43:39.651445" elapsed="0.000999"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${is_visible}</arg>
+<arg>Click Element</arg>
+<arg>${PAGINATION_BUTTON}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-08-28T16:43:39.652444" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${is_visible}</arg>
+<arg>Log</arg>
+<arg>Moved to page ${i + 2}.</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-08-28T16:43:39.652444" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${is_visible}</arg>
+<arg>Sleep</arg>
+<arg>2s</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-08-28T16:43:39.653443" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-28T16:43:39.654447" level="INFO">Pagination button not found on page 1, stopping navigation.</msg>
+<arg>Pagination button not found on page ${i + 1}, stopping navigation.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-28T16:43:39.654447" elapsed="0.000000"/>
+</kw>
+<arg>not ${is_visible}</arg>
+<arg>Log</arg>
+<arg>Pagination button not found on page ${i + 1}, stopping navigation.</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-08-28T16:43:39.653443" elapsed="0.001004"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<msg time="2024-08-28T16:43:39.655448" level="INFO">Exiting for loop altogether.</msg>
+<arg>not ${is_visible}</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-08-28T16:43:39.655448" elapsed="0.000000"/>
+</kw>
+<var name="${i}">0</var>
+<status status="PASS" start="2024-08-28T16:43:39.476973" elapsed="0.178475"/>
+</iter>
+<var>${i}</var>
+<value>${pages_to_browse}</value>
+<status status="PASS" start="2024-08-28T16:43:39.475974" elapsed="0.179474"/>
+</for>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-28T16:43:39.656446" level="INFO">Completed pagination through 3 pages.</msg>
+<arg>Completed pagination through ${pages_to_browse} pages.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-28T16:43:39.656446" elapsed="0.000000"/>
+</kw>
+<arg>3</arg>
+<status status="PASS" start="2024-08-28T16:43:39.475974" elapsed="0.180472"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-28T16:43:39.656446" level="INFO">Browsed through 3 pages of search results.</msg>
+<arg>Browsed through 3 pages of search results.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-28T16:43:39.656446" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-28T16:43:39.657444" elapsed="2.200301"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-28T16:43:41.858666" level="INFO">Browser closed successfully.</msg>
+<arg>Browser closed successfully.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-28T16:43:41.857745" elapsed="0.000921"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-28T16:43:41.858666" level="INFO">Test case Search And Browse Laptops completed.</msg>
+<arg>Test case Search And Browse Laptops completed.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-28T16:43:41.858666" elapsed="0.000000"/>
+</kw>
+<doc>This test case opens the Amazon homepage, searches for laptops, validates the search results, browses through pagination, and closes the browser.</doc>
+<status status="PASS" start="2024-08-28T16:43:30.487713" elapsed="11.370953"/>
+</test>
+<status status="PASS" start="2024-08-28T16:43:30.305043" elapsed="11.553623"/>
+</suite>
+<status status="PASS" start="2024-08-28T16:43:30.289896" elapsed="11.569769"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="SuiteB">Tests.SuiteB</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

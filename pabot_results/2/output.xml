@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.10.6 on win32)" generated="2024-08-28T16:43:30.263500" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\PY35555.CORP\Desktop\Sireesha-Test-Assignment\Volvo-Test-Assignment\tests">
+<suite id="s1-s1" name="SuiteC" source="C:\Users\PY35555.CORP\Desktop\Sireesha-Test-Assignment\Volvo-Test-Assignment\tests\SuiteC.robot">
+<test id="s1-s1-t1" name="Search Add To Cart And Checkout" line="14">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-28T16:43:30.491903" level="INFO">Starting test case: Search Add To Cart And Checkout</msg>
+<arg>Starting test case: Search Add To Cart And Checkout</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-28T16:43:30.491903" elapsed="0.000000"/>
+</kw>
+<kw name="Open Amazon Homepage">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-28T16:43:30.493868" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.in'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-28T16:43:30.492866" elapsed="5.671935"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-28T16:43:36.165802" elapsed="0.420050"/>
+</kw>
+<status status="PASS" start="2024-08-28T16:43:30.492866" elapsed="6.092986"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-28T16:43:36.587854" level="INFO">Amazon homepage opened successfully.</msg>
+<arg>Amazon homepage opened successfully.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-28T16:43:36.586854" elapsed="0.001000"/>
+</kw>
+<kw name="Search For Product">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-28T16:43:36.590894" level="INFO">Typing text 'smartphone' into text field 'id=twotabsearchtextbox'.</msg>
+<arg>id=twotabsearchtextbox</arg>
+<arg>${product}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-28T16:43:36.588852" elapsed="0.303598"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-08-28T16:43:36.894455" level="INFO">Clicking button 'xpath=//input[@value='Go']'.</msg>
+<arg>xpath=//input[@value='Go']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-28T16:43:36.893451" elapsed="2.047277"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//span[@class='a-size-medium a-color-base a-text-normal']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-28T16:43:38.940728" elapsed="0.029000"/>
+</kw>
+<arg>${SEARCH_TERM}</arg>
+<status status="PASS" start="2024-08-28T16:43:36.587854" elapsed="2.381874"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-28T16:43:38.971728" level="INFO">Searched for smartphone.</msg>
+<arg>Searched for ${SEARCH_TERM}.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-28T16:43:38.970733" elapsed="0.000995"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-28T16:43:38.972728" level="INFO">Waiting for Add to Cart button to appear.</msg>
+<arg>Waiting for Add to Cart button to appear.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-28T16:43:38.971728" elapsed="0.001000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ADD_TO_CART_BUTTON}</arg>
+<arg>30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-28T16:43:38.972728" elapsed="0.025999"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-08-28T16:43:38.999726" level="INFO">Clicking button 'xpath=//button[@id='a-autoid-1-announce']'.</msg>
+<arg>${ADD_TO_CART_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-28T16:43:38.999726" elapsed="0.234250"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-28T16:43:39.234976" level="INFO">Product added to the cart.</msg>
+<arg>Product added to the cart.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-28T16:43:39.233976" elapsed="0.001000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-28T16:43:39.236983" level="INFO">Waiting for Go to Cart button to appear.</msg>
+<arg>Waiting for Go to Cart button to appear.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-28T16:43:39.235974" elapsed="0.002001"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-28T16:43:54.244280" level="INFO">Slept 15 seconds.</msg>
+<arg>15s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-28T16:43:39.237975" elapsed="15.006305"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2024-08-28T16:44:24.532491" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-08-28T16:44:24.532491" level="FAIL">Element 'xpath=//*[@data-csa-c-id='2nrmxy-pvh6xy-i7ymz8-vhigv0']' not visible after 30 seconds.</msg>
+<arg>${GO_TO_CART_BUTTON}</arg>
+<arg>30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2024-08-28T16:43:54.244280" elapsed="30.289210">Element 'xpath=//*[@data-csa-c-id='2nrmxy-pvh6xy-i7ymz8-vhigv0']' not visible after 30 seconds.</status>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${GO_TO_CART_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-28T16:44:24.533490" elapsed="0.001000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Navigated to cart page</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-08-28T16:44:24.534490" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${CHECKOUT_BUTTON}</arg>
+<arg>30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-08-28T16:44:24.534490" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${CHECKOUT_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-28T16:44:24.534490" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Proceeded to checkout.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-08-28T16:44:24.534490" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Test case Search Add To Cart And Checkout completed.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-08-28T16:44:24.534490" elapsed="0.000000"/>
+</kw>
+<doc>This test case opens the Amazon homepage, searches for a smartphone, adds the product to the cart, and proceeds to checkout.</doc>
+<status status="FAIL" start="2024-08-28T16:43:30.489870" elapsed="54.045622">Element 'xpath=//*[@data-csa-c-id='2nrmxy-pvh6xy-i7ymz8-vhigv0']' not visible after 30 seconds.</status>
+</test>
+<status status="FAIL" start="2024-08-28T16:43:30.286754" elapsed="54.249741"/>
+</suite>
+<status status="FAIL" start="2024-08-28T16:43:30.273616" elapsed="54.263877"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="SuiteC">Tests.SuiteC</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

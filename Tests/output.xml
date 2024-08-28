@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 7.0.1 (Python 3.10.6 on win32)" generated="2024-08-28T14:13:56.352539" rpa="false" schemaversion="5">
+<suite id="s1" name="Reports" source="C:\Users\PY35555.CORP\Desktop\Sireesha-Test-Assignment\Volvo-Test-Assignment\Reports">
+<suite id="s1-s1" name="Tests" source="C:\Users\PY35555.CORP\Desktop\Sireesha-Test-Assignment\Volvo-Test-Assignment\Reports\Tests">
+<suite id="s1-s1-s1" name="SuiteA" source="C:\Users\PY35555.CORP\Desktop\Sireesha-Test-Assignment\Volvo-Test-Assignment\Reports\Tests\SuiteA.robot">
+<test id="s1-s1-s1-t1" name="Browse Smartphone Category" line="7">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-28T14:13:56.031673" level="INFO">Starting the test case: Browse Smartphone Category</msg>
+<arg>Starting the test case: Browse Smartphone Category</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-28T14:13:56.031673" elapsed="0.000000"/>
+</kw>
+<kw name="Open Amazon Homepage">
+<msg time="2024-08-28T14:13:56.032671" level="FAIL">No keyword with name 'Open Amazon Homepage' found.</msg>
+<status status="FAIL" start="2024-08-28T14:13:56.032671" elapsed="0.000000">No keyword with name 'Open Amazon Homepage' found.</status>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Amazon homepage opened successfully</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-08-28T14:13:56.032671" elapsed="0.000000"/>
+</kw>
+<kw name="Search For Product">
+<arg>smartphone</arg>
+<status status="NOT RUN" start="2024-08-28T14:13:56.032671" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Searched for 'smartphone'</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-08-28T14:13:56.032671" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Page Contains Element">
+<arg>${FILTER_CUSTOMER_REVIEWS}</arg>
+<arg>10s</arg>
+<status status="NOT RUN" start="2024-08-28T14:13:56.032671" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Customer Reviews filter is present on the page</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-08-28T14:13:56.032671" elapsed="0.000000"/>
+</kw>
+<kw name="Scroll Element Into View">
+<arg>${FILTER_CUSTOMER_REVIEWS}</arg>
+<status status="NOT RUN" start="2024-08-28T14:13:56.032671" elapsed="0.000999"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Scrolled to the Customer Reviews filter</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-08-28T14:13:56.033670" elapsed="0.000000"/>
+</kw>
+<kw name="Execute JavaScript">
+<arg>document.querySelector("span.a-icon-alt").click()</arg>
+<status status="NOT RUN" start="2024-08-28T14:13:56.033670" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Clicked on the first review filter using JavaScript</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-08-28T14:13:56.033670" elapsed="0.000000"/>
+</kw>
+<kw name="Select First Product">
+<status status="NOT RUN" start="2024-08-28T14:13:56.033670" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Selected the first product from the search results</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-08-28T14:13:56.033670" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser">
+<status status="NOT RUN" start="2024-08-28T14:13:56.033670" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Browser closed successfully</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-08-28T14:13:56.033670" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Finished the test case: Browse Smartphone Category</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-08-28T14:13:56.033670" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-08-28T14:13:56.030657" elapsed="0.004013">No keyword with name 'Open Amazon Homepage' found.</status>
+</test>
+<status status="FAIL" start="2024-08-28T14:13:56.026000" elapsed="0.008013"/>
+</suite>
+<status status="FAIL" start="2024-08-28T14:13:56.024000" elapsed="0.010012"/>
+</suite>
+<doc>[https://pabot.org/?ref=log|Pabot] result from 1 executions.</doc>
+<status status="FAIL" start="2024-08-28T14:13:56.009000" elapsed="0.026374"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Reports">Reports</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Tests">Reports.Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="SuiteA">Reports.Tests.SuiteA</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-08-28T14:13:56.029656" level="ERROR">Error in file 'C:\Users\PY35555.CORP\Desktop\Sireesha-Test-Assignment\Volvo-Test-Assignment\Reports\Tests\SuiteA.robot' on line 2: Resource file '..\resources\HomePage.robot' does not exist.</msg>
+<msg time="2024-08-28T14:13:56.029656" level="ERROR">Error in file 'C:\Users\PY35555.CORP\Desktop\Sireesha-Test-Assignment\Volvo-Test-Assignment\Reports\Tests\SuiteA.robot' on line 3: Resource file '..\resources\SearchResultsPage.robot' does not exist.</msg>
+</errors>
+</robot>
